@@ -1,16 +1,12 @@
 {
   "demonstration": true,
-  "seo": {
-    "title": "Editora Aristotélica — O pensamento pede tempo",
-    "description": "Livros, literatura e pensamento. Conheça a Editora Aristotélica."
-  },
   "hero": {
     "title": "O pensamento\npede tempo.",
     "description": "Livros para olhar de novo. Para fazer perguntas melhores. Para continuar a conversa depois da última página.",
     "button": "Encontre sua próxima leitura",
     "image": "/media/retrato.png",
     "imageAlt": "Retrato fornecido pela Editora Aristotélica",
-    "caption": "Um espaço para a palavra e suas possibilidades."
+    "caption": "Um espaço para a palavra e suas possibilidades. [teste de integração]"
   },
   "book": {
     "category": "Ensaios sobre o cotidiano",
@@ -65,8 +61,10 @@
     "imageAlt": "Composição editorial com livros, papel e luz sobre uma mesa escura"
   },
   "contact": {
-    "title": "A próxima página\ncomeça aqui.",
-    "email": "",
-    "whatsapp": ""
+    "title": "A próxima página\ncomeça aqui."
+  },
+  "seo": {
+    "title": "Editora Aristotélica — O pensamento pede tempo",
+    "description": "Livros, literatura e pensamento. Conheça a Editora Aristotélica."
   }
 }
