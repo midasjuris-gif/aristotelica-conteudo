@@ -1,0 +1,270 @@
+{
+  "media": {
+    "input": "media",
+    "output": "/media",
+    "extensions": [
+      "jpg",
+      "jpeg",
+      "png",
+      "webp",
+      "avif"
+    ],
+    "rename": "safe"
+  },
+  "content": [
+    {
+      "name": "site",
+      "label": "Editar site da Aristotélica",
+      "type": "file",
+      "path": "content/site.json",
+      "format": "json",
+      "operations": {
+        "delete": false
+      },
+      "fields": [
+        {
+          "name": "demonstration",
+          "label": "Mostrar avisos de conteúdo ilustrativo",
+          "type": "boolean"
+        },
+        {
+          "name": "hero",
+          "label": "Abertura",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Frase principal",
+              "type": "text"
+            },
+            {
+              "name": "description",
+              "label": "Apresentação curta",
+              "type": "text"
+            },
+            {
+              "name": "button",
+              "label": "Texto do botão",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "label": "Foto em destaque",
+              "type": "image"
+            },
+            {
+              "name": "imageAlt",
+              "label": "Descrição da foto",
+              "type": "string"
+            },
+            {
+              "name": "caption",
+              "label": "Frase abaixo da abertura",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "book",
+          "label": "Livro em destaque",
+          "type": "object",
+          "fields": [
+            {
+              "name": "category",
+              "label": "Categoria",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "label": "Título",
+              "type": "string"
+            },
+            {
+              "name": "author",
+              "label": "Autor",
+              "type": "string"
+            },
+            {
+              "name": "synopsis",
+              "label": "Sinopse",
+              "type": "text"
+            },
+            {
+              "name": "pages",
+              "label": "Páginas",
+              "type": "string"
+            },
+            {
+              "name": "binding",
+              "label": "Formato",
+              "type": "string"
+            },
+            {
+              "name": "language",
+              "label": "Idioma",
+              "type": "string"
+            },
+            {
+              "name": "price",
+              "label": "Preço",
+              "type": "string"
+            },
+            {
+              "name": "image",
+              "label": "Capa do livro",
+              "type": "image"
+            },
+            {
+              "name": "overlayTitle",
+              "label": "Escrever título e autor sobre a capa",
+              "type": "boolean",
+              "description": "Desative ao enviar a capa real com os textos já impressos."
+            }
+          ]
+        },
+        {
+          "name": "agenda",
+          "label": "Eventos",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Título da seção",
+              "type": "text"
+            },
+            {
+              "name": "description",
+              "label": "Descrição da seção",
+              "type": "text"
+            },
+            {
+              "name": "emptyMessage",
+              "label": "Mensagem sem eventos",
+              "type": "string"
+            },
+            {
+              "name": "events",
+              "label": "Lista de eventos",
+              "type": "object",
+              "list": {
+                "max": 50,
+                "collapsible": {
+                  "collapsed": true,
+                  "summary": "{title}"
+                }
+              },
+              "fields": [
+                {
+                  "name": "published",
+                  "label": "Mostrar no site",
+                  "type": "boolean"
+                },
+                {
+                  "name": "date",
+                  "label": "Data",
+                  "type": "date",
+                  "options": {
+                    "format": "yyyy-MM-dd",
+                    "time": false
+                  }
+                },
+                {
+                  "name": "category",
+                  "label": "Tipo de evento",
+                  "type": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Nome do evento",
+                  "type": "text"
+                },
+                {
+                  "name": "location",
+                  "label": "Local",
+                  "type": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Descrição curta",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "Sobre a editora",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Título",
+              "type": "text"
+            },
+            {
+              "name": "paragraphs",
+              "label": "Parágrafos",
+              "type": "text",
+              "list": true
+            },
+            {
+              "name": "image",
+              "label": "Imagem editorial",
+              "type": "image"
+            },
+            {
+              "name": "imageAlt",
+              "label": "Descrição da imagem",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "contact",
+          "label": "Contato e WhatsApp",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Chamada no rodapé",
+              "type": "text"
+            },
+            {
+              "name": "email",
+              "label": "E-mail",
+              "type": "string"
+            },
+            {
+              "name": "whatsapp",
+              "label": "WhatsApp (DDD + número)",
+              "type": "string",
+              "description": "Somente 10 ou 11 dígitos, sem 55. Deixe vazio para desativar.",
+              "pattern": {
+                "regex": "^$|^[1-9][0-9][2-9][0-9]{7,8}$",
+                "message": "Digite DDD + número ou deixe vazio."
+              }
+            }
+          ]
+        },
+        {
+          "name": "seo",
+          "label": "Título e descrição para buscadores",
+          "type": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Título da página",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "label": "Descrição",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
