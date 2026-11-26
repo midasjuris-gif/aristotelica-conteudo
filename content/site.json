@@ -1,0 +1,72 @@
+{
+  "demonstration": true,
+  "seo": {
+    "title": "Editora Aristotélica — O pensamento pede tempo",
+    "description": "Livros, literatura e pensamento. Conheça a Editora Aristotélica."
+  },
+  "hero": {
+    "title": "O pensamento\npede tempo.",
+    "description": "Livros para olhar de novo. Para fazer perguntas melhores. Para continuar a conversa depois da última página.",
+    "button": "Encontre sua próxima leitura",
+    "image": "/media/retrato.png",
+    "imageAlt": "Retrato fornecido pela Editora Aristotélica",
+    "caption": "Um espaço para a palavra e suas possibilidades."
+  },
+  "book": {
+    "category": "Ensaios sobre o cotidiano",
+    "title": "A medida do silêncio",
+    "author": "Tomás Valença",
+    "synopsis": "Entre o ruído dos dias e aquilo que ainda não sabemos dizer, há um lugar para a escuta. Em ensaios breves, este livro percorre o tempo, a memória e as pequenas escolhas que dão forma à vida.",
+    "pages": "192 páginas",
+    "binding": "Brochura",
+    "language": "Em português",
+    "price": "R$ 69,90",
+    "image": "/media/capa-conceitual.jpg",
+    "overlayTitle": true
+  },
+  "agenda": {
+    "title": "As páginas também\nnos aproximam.",
+    "description": "Encontros, leituras e conversas para além do livro.",
+    "emptyMessage": "Em breve, novos encontros.",
+    "events": [
+      {
+        "published": true,
+        "date": "2027-03-18",
+        "category": "Lançamento",
+        "title": "Uma noite para\ncomeçar a conversa",
+        "location": "São Paulo · Espaço a definir",
+        "description": "Uma leitura compartilhada de A medida do silêncio, seguida de uma conversa sobre os temas do livro."
+      },
+      {
+        "published": true,
+        "date": "2027-04-25",
+        "category": "Encontro",
+        "title": "O tempo de\numa boa leitura",
+        "location": "Encontro on-line · Local virtual a definir",
+        "description": "Um encontro de leitores para trocar impressões, perguntas e passagens que continuam conosco."
+      },
+      {
+        "published": true,
+        "date": "2027-05-08",
+        "category": "Feira",
+        "title": "Livros que encontram\nseus leitores",
+        "location": "Belo Horizonte · Espaço a definir",
+        "description": "Uma proposta de encontro presencial com livros, descobertas e tempo para conversar."
+      }
+    ]
+  },
+  "about": {
+    "title": "Publicar é abrir\numa conversa.",
+    "paragraphs": [
+      "Na proposta editorial aqui imaginada, a Aristotélica é um lugar de encontro entre literatura, filosofia e a experiência de estar no mundo. Um convite a ler com atenção, acolher perguntas e descobrir outras formas de olhar o cotidiano.",
+      "Da escolha de um texto ao cuidado com cada página, a intenção é simples: criar livros aos quais valha a pena voltar."
+    ],
+    "image": "/media/natureza-editorial.jpg",
+    "imageAlt": "Composição editorial com livros, papel e luz sobre uma mesa escura"
+  },
+  "contact": {
+    "title": "A próxima página\ncomeça aqui.",
+    "email": "",
+    "whatsapp": ""
+  }
+}
